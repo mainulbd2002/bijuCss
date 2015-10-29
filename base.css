@@ -169,12 +169,10 @@ label > .label-body {
 /*  ––––––––––––––––––––    Navigation  ––––––––––––––––––––    */
 .nav {
 	font-size: 18px;
-	text-transform: uppercase;
-	
 	font-weight: bold;
 }
 .nav a {
-	color: #1b1b1b
+	color: #1b1b1b;
 }
 .nav ul {
 	margin: 0;
@@ -363,7 +361,7 @@ form {
 /*  ––––––––––––––––––––    Grid  ––––––––––––––––––––    */
 .section {
 	width: 100%;
-	float: left
+	float: left;
 }
 .full-width {
 	width: 100%;
@@ -373,7 +371,7 @@ form {
 	width: 100%;
 	max-width: 1200px;
 	margin: 0 auto;
-	padding: 0 20px;
+	padding: 0px;
 	box-sizing: border-box;
 }
 .columns, .nmcolumns {
@@ -382,19 +380,13 @@ form {
 	box-sizing: border-box;
 }
 
-  
+.fr { float:right;}
+.fl { float:left;}
+ 
 
-
-@media (min-width: 400px) {
-  .container {
-    width: 85%;
-    padding: 0; }
-
-}
 
 @media (min-width: 550px) {
-  .container {
-    width: 80%; }
+
   
   .columns {
     margin-left: 4%; }
@@ -430,10 +422,10 @@ form {
   .three.nmcolumns                  { width: 24.99999999999%; }
   .four.nmcolumns                   { width: 33.33333333332%; }
   .five.nmcolumns                   { width: 41.66666666665%; }
-  .six.nmcolumns                    { width: 49.99999999998%;            }
+  .six.nmcolumns                    { width: 49.99999999998%; }
   .seven.nmcolumns                  { width: 58.33333333331%; }
   .eight.nmcolumns                  { width: 66.66666666664%; }
-  .nine.nmcolumns                   { width: 74.99999999997%;          }
+  .nine.nmcolumns                   { width: 74.99999999997%; }
   .ten.nmcolumns                    { width: 83.3333333333%; }
   .eleven.nmcolumns                 { width: 91.66666666663%; }
   .twelve.nmcolumns                 { width: 100%;}
@@ -444,134 +436,14 @@ form {
 
 @media only screen 
 
-and (min-device-width : 320px) 
+and (min-device-width : 300px) 
 
 and (max-device-width : 480px) {
 
-	.table-content {
+.table-content {
     width: 100%;
     overflow: scroll;
 }
-
-
-
-}
-
-
-
-@media only screen 
-
-and (min-width : 321px) {
-
-/* Smartphones (landscape) ----------- */
-
-
-
-}
-
-
-
-
-
-@media only screen 
-
-and (max-width : 320px) {
-
-/* Smartphones (portrait) ----------- */
-
-
-
-
-
-}
-
-
-
-
-
-@media only screen 
-
-and (min-device-width : 768px) 
-
-and (max-device-width : 1024px) {
-
-/* iPads (portrait and landscape) ----------- */
-
-
-
-}
-
-
-
-
-
-@media only screen 
-
-and (min-device-width : 768px) 
-
-and (max-device-width : 1024px) 
-
-and (orientation : landscape) {
-
-/* iPads (landscape) ----------- */
-
-
-
-}
-
-
-
-
-
-@media only screen 
-
-and (min-device-width : 768px) 
-
-and (max-device-width : 1024px) 
-
-and (orientation : portrait) {
-
-/* iPads (portrait) ----------- */
-
-
-
-
-
-}
-
-
-
-@media only screen 
-
-and (min-width : 1200px) {
-
-/* Desktops and laptops ----------- */
-
-
-
-}
-
-
-
-@media only screen 
-
-and (min-width : 1700px) {
-
-/* Large screens ----------- */
-
-
-
-}
-
-
-
-@media
-
-only screen and (-webkit-min-device-pixel-ratio : 1.5),
-
-only screen and (min-device-pixel-ratio : 1.5) {
-
-/* iPhone 4 ----------- */
 
 
 
