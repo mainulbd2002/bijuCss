@@ -1,3 +1,8 @@
+
+/*included table-content-sm class to style the table view for mobile screen*/
+
+
+
 /*  ––––––––––––––––––––    Base Styles  ––––––––––––––––––––    */
 
 html {
@@ -249,7 +254,7 @@ label > .label-body {
 
 /*  ––––––––––––––––––––    Tables  ––––––––––––––––––––    */
 
-
+.table-content-sm table,
 .table-content table {
 	border-collapse: collapse;
 	border-spacing: 0;
@@ -259,34 +264,42 @@ label > .label-body {
 	padding: 0px;
 	border: solid 1px #bfbfbf;
 }
+.table-content-sm tr:last-child td:last-child,
 .table-content tr:last-child td:last-child {
 	-moz-border-radius-bottomright: 0px;
 	-webkit-border-bottom-right-radius: 0px;
 	border-bottom-right-radius: 0px;
 }
+.table-content-sm table tr:first-child td:first-child,
 .table-content table tr:first-child td:first-child {
 	-moz-border-radius-topleft: 0px;
 	-webkit-border-top-left-radius: 0px;
 	border-top-left-radius: 0px;
 }
+.table-content-sm table tr:first-child td:last-child,
 .table-content table tr:first-child td:last-child {
 	-moz-border-radius-topright: 0px;
 	-webkit-border-top-right-radius: 0px;
 	border-top-right-radius: 0px;
 }
+.table-content-sm tr:last-child td:first-child,
 .table-content tr:last-child td:first-child {
 	-moz-border-radius-bottomleft: 0px;
 	-webkit-border-bottom-left-radius: 0px;
 	border-bottom-left-radius: 0px;
 }
+.table-content-sm tr:hover td,
 .table-content tr:hover td {
 }
+.table-content-sm tr:nth-child(odd),
 .table-content tr:nth-child(odd) {
 	background-color: #f4f4f4;
 }
+.table-content-sm tr:nth-child(even),
 .table-content tr:nth-child(even) {
 	background-color: #ffffff;
 }
+.table-content-sm td,
 .table-content td {
 	vertical-align: middle;
 	border: 1px solid #bfbfbf;
@@ -297,15 +310,19 @@ label > .label-body {
 	color: #000000;
 	font-size: 14px;
 }
+.table-content-sm tr:last-child td,
 .table-content tr:last-child td {
 	border-width: 0px 1px 0px 0px;
 }
+.table-content-sm tr td:last-child,
 .table-content tr td:last-child {
 	border-width: 0px 0px 1px 0px;
 }
+.table-content-sm tr:last-child td:last-child,
 .table-content tr:last-child td:last-child {
 	border-width: 0px 0px 0px 0px;
 }
+.table-content-sm tr:first-child td,
 .table-content tr:first-child td {
 	/*background-color: #A9A9A9;
 	border: 0px solid #bfbfbf;
@@ -317,12 +334,15 @@ label > .label-body {
 	    background-color: #E6E6E6;
 	font-size: 140%;
 }
+.table-content-sm tr:first-child:hover td,
 .table-content tr:first-child:hover td {
 /*background-color: #ff0000;*/
 }
+.table-content-sm tr:first-child td:first-child,
 .table-content tr:first-child td:first-child {
 /*border-width: 0px 0px 1px 0px;*/
 }
+.table-content-sm tr:first-child td:last-child-sm
 .table-content tr:first-child td:last-child {
 	border-width: 0px 0px 1px 1px;
 }
@@ -444,6 +464,12 @@ and (max-device-width : 480px) {
 
 	.table-content {
     width: 100%;
+    overflow: scroll;
+}
+	
+	.table-content-sm {
+    width: 90%;
+		height: 400px;
     overflow: scroll;
 }
 
