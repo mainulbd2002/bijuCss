@@ -322,7 +322,6 @@ label > .label-body {
 .table-content tr:last-child td:last-child {
 	border-width: 0px 0px 0px 0px;
 }
-.table-content-sm tr:first-child td,
 .table-content tr:first-child td {
 	/*background-color: #A9A9A9;
 	border: 0px solid #bfbfbf;
@@ -334,6 +333,14 @@ label > .label-body {
 	    background-color: #E6E6E6;
 	font-size: 140%;
 }
+.table-content-sm thead tr td {
+	background-color: #4d4d4d;
+	border-bottom: 1px solid #bfbfbf;
+	font-size: 20px;
+}
+
+
+
 .table-content-sm tr:first-child:hover td,
 .table-content tr:first-child:hover td {
 /*background-color: #ff0000;*/
@@ -471,7 +478,10 @@ and (max-device-width : 480px) {
     width: 90%;
 		height: 400px;
     overflow: scroll;
+
 }
+	
+	
 
 
 
